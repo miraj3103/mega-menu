@@ -162,6 +162,9 @@
                 menuItems: [
                     { name: 'Home', link: '#' },
                     { name: 'About', link: '#' },
+
+                    // menu item start
+
                     {
                         name: 'Services',
                         id: 'services',
@@ -186,26 +189,107 @@
                             }
                         ]
                     },
+
+                    // menu item end
                     {
-                        name: 'Products',
-                        id: 'products',
-                        subitems: [
+                        "name": "Products",
+                        "id": "products",
+                        "subitems": [
                             {
-                                name: 'Electronics',
-                                children: [
-                                    { name: 'Laptops', link: '#' },
-                                    { name: 'Mobiles', link: '#' }
+                                "name": "Electronics",
+                                "id": "electronics",
+                                "children": [
+                                    { "name": "Laptops", "link": "#" },
+                                    { "name": "Monitors", "link": "#" },
+                                    { "name": "Cameras", "link": "#" }
                                 ]
                             },
                             {
-                                name: 'Fashion',
-                                children: [
-                                    { name: 'Men', link: '#' },
-                                    { name: 'Women', link: '#' }
+                                "name": "Home Appliances",
+                                "id": "home-appliances",
+                                "children": [
+                                    { "name": "Refrigerators", "link": "#" },
+                                    { "name": "Microwaves", "link": "#" },
+                                    { "name": "Air Conditioners", "link": "#" }
+                                ]
+                            }
+                        ]
+                    },
+
+                    // menu item start
+                    {
+                        "name": "Fashion",
+                        "id": "fashion",
+                        "subitems": [
+                            {
+                                "name": "Men's Fashion",
+                                "id": "mens-fashion",
+                                "children": [
+                                    { "name": "T-Shirts", "link": "#" },
+                                    { "name": "Jeans", "link": "#" },
+                                    { "name": "Shoes", "link": "#" },
+                                    { "name": "Watches", "link": "#" }
+                                ]
+                            },
+                            {
+                                "name": "Women's Fashion",
+                                "id": "womens-fashion",
+                                "children": [
+                                    { "name": "Dresses", "link": "#" },
+                                    { "name": "Handbags", "link": "#" },
+                                    { "name": "Jewelry", "link": "#" },
+                                    { "name": "Heels", "link": "#" }
+                                ]
+                            },
+                            {
+                                "name": "Accessories",
+                                "id": "fashion-accessories",
+                                "children": [
+                                    { "name": "Sunglasses", "link": "#" },
+                                    { "name": "Hats", "link": "#" },
+                                    { "name": "Belts", "link": "#" },
+                                    { "name": "Scarves", "link": "#" }
+                                ]
+                            }
+                        ]
+                    },
+
+                    // menu item start
+
+                    {
+                        "name": "Technology",
+                        "id": "technology",
+                        "subitems": [
+                            {
+                                "name": "Computers & Laptops",
+                                "id": "computers-laptops",
+                                "children": [
+                                    { "name": "Gaming Laptops", "link": "#" },
+                                    { "name": "Ultrabooks", "link": "#" },
+                                    { "name": "MacBooks", "link": "#" }
+                                ]
+                            },
+                            {
+                                "name": "PC Components",
+                                "id": "pc-components",
+                                "children": [
+                                    { "name": "Processors", "link": "#" },
+                                    { "name": "Graphics Cards", "link": "#" },
+                                    { "name": "Motherboards", "link": "#" }
+                                ]
+                            },
+                            {
+                                "name": "Mobile & Accessories",
+                                "id": "mobile-accessories",
+                                "children": [
+                                    { "name": "Smartphones", "link": "#" },
+                                    { "name": "Smartwatches", "link": "#" },
+                                    { "name": "Power Banks", "link": "#" }
                                 ]
                             }
                         ]
                     }
+
                 ],
                 toggleMobileMenu() {
                     this.isMobileOpen = !this.isMobileOpen;
